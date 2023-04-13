@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>datas em javascript</title>
+    <script>
+        /*  var data = new Date();
+          document.write('<h1> modificando dias </h1>')
+          document.write(data.toString())
+          data.setDate(data.getDate()+1)
+          document.write('<br/>' + data.toString())
+          document.write('<br/><hr><br/>')
+          document.write('<h1> modificando meses </h1>')
+          document.write(data.toString())
+          data.setMonth(data.getMonth()+1)
+          document.write('<br/>' + data.toString())
+          document.write('<br/><hr><br/>')
+          document.write('<h1> modificando anos </h1>')
+          document.write(data.toString())
+          data.setFullYear(data.getFullYear()+1)
+          document.write('<br/>' + data.toString())
+          document.write('<br/><hr><br/>')*/
+
+        document.write('<h1> trabalhando calculo entre datas </h1>')
+        //data 1 = 01/01/2023
+        var data1 = new Date(2023, 0, 1)
+        //data 2 = 31/12/2023
+        var data2 = new Date(2023, 11, 31)
+
+        document.write('data ficticia 1 - ' + data1.toString()) //data 1 em string
+        document.write('<br/> data ficticia 2 - ' + data2.toString()) //data 2 em string
+
+        //converter datas para algo calculavel em milisegundos
+        var data1_ms = data1.getTime() //getTime() retorna o numero de milisegundos desde 1970
+        var data2_ms = data2.getTime() //getTime() retorna o numero de milisegundos desde 1970
+
+        document.write('<br/><h1> Milisegundos desde 1970 </h1>')
+        document.write(data1_ms) //data 1 em milisegundos
+        document.write('<br/>' + data2_ms) //data 2 em milisegundos
+
+        //calculo da diferença em milisegundos
+        document.write('<br/><h1> Diferença em milisegundos </h1>')
+        var diferenca_ms = data2_ms - data1_ms //diferença em milisegundos
+        document.write(diferenca_ms) //diferença em milisegundos impressa
+
+        //1 dia = 24 horas / 1 hora = 60 minutos / 1 minuto = 60 segundos / 1 segundo = 1000 milisegundos
+        //1 dia = 24 * 60 * 60 * 1000 = 86400000 milisegundos
+        document.write('<br/><h1> Diferença em dias </h1>')
+        var diferenca_dias = diferenca_ms / 86400000 //diferença em dias
+        document.write(diferenca_dias) //diferença em dias impressa
+
+        //1 ano = 365 dias
+        document.write('<br/><h1> Diferença em anos </h1>')
+        var diferenca_anos = diferenca_dias / 365 //diferença em anos
+        document.write(diferenca_anos) //diferença em anos impressa
+
+
+    </script>
+</head>
+
+<body>
+    <br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

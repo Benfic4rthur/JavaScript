@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM - SELECIONANDO ELEMENTOS</title>
+    <script>
+        function distribuiCaractere() {
+            //pegar o caractere digitado
+            var caractere = document.getElementById("caractere").value;
+            //limpar o campo de digitação
+            document.getElementById("caractere").value = "";
+            //limpa espaços em branco nas extremidades
+            caractere = caractere.trim();
+            //verificar se é número ou letra
+            switch (caractere) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    //limpar o campo
+                    document.getElementById("numeros").value = "";
+                    //adiciona o caractere no campo 
+                    document.getElementById("numeros").value += caractere; //+= concatena mas poderia apenas receber o novo valor
+                    break;
+                default:
+                    //limpar o campo
+                    document.getElementById("letras").value = "";
+                    //adiciona o caractere no campo
+                    document.getElementById("letras").value += caractere; //+= concatena mas poderia apenas receber o novo valor
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div style="width: 500px;">
+        <input id="caractere" type="text" placeholder="digite um caractere aqui" onkeyup="distribuiCaractere()" />
+        <hr>
+        <span>Letras: </span>
+        <input type="text" id="letras" disabled="disabled" />
+        <span>Números: </span>
+        <input type="text" id="numeros" disabled="disabled" />
+    </div>
+</body>
+
+</html>

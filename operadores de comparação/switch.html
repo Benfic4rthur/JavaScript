@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Desafio A B C</title>
+    <script>
+        var opcao = prompt("Digite a opção desejada: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão");
+        if (opcao == 1) {
+            opcao = 1
+        }
+        else if (opcao == 2) {
+            opcao = 2
+        }
+        else if (opcao == 3) {
+            opcao = 3
+        }
+        else if (opcao == 4) {
+            opcao = 4
+        }
+        else {
+            opcao = 0
+        }
+        var valor1 = prompt("Digite o primeiro valor:");
+        var valor2 = prompt("Digite o segundo valor:");
+        switch (opcao) {
+            case 1:
+                document.write("A soma de " + valor1 + " + " + valor2 + " é igual a " + (parseFloat(valor1) + parseFloat(valor2)));
+                break;
+            case 2:
+                document.write("A subtração de " + valor1 + " - " + valor2 + " é igual a " + (parseFloat(valor1) - parseFloat(valor2)));
+                break;
+            case 3:
+                document.write("A multiplicação de " + valor1 + " * " + valor2 + " é igual a " + (parseFloat(valor1) * parseFloat(valor2)));
+                break;
+            case 4:
+                document.write("A divisão de " + valor1 + " / " + valor2 + " é igual a " + (parseFloat(valor1) / parseFloat(valor2)));
+                break;
+            default:
+                document.write("Opção inválida");
+        }
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

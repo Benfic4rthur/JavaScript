@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos mouse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        .marcador {
+            background: #ccc;
+            border: 1px solid #f94646;
+            height: 120px;
+        }
+    </style>
+    <script>
+        function acao() {
+            alert('evento disparado ao clicar no elemento');
+        }
+        function acao2() {
+            alert('evento disparado ao receber dois cliques no elemento');
+        }
+        function acao3() {
+            alert('evento disparado ao soltar o botão do mouse sobre o elemento');
+        }
+        function acao4() {
+            alert('evento disparado ao passar o mouse sobre o elemento');
+        }
+        function acao5() {
+            alert('evento disparado ao retirar o mouse do elemento');
+        }
+        function acao6() {
+            alert('evento disparado ao clicar no elemento');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Eventos do mouse</h1>
+        <br><br>
+        <div class="row borda justify-content-between">
+
+            <div class="marcador col-2" onclick="acao()">
+                <h4>onclick</h4>
+            </div>
+            <div class="marcador col-2" ondblclick="acao2()">
+                <h4>ondblclick</h4>
+            </div>
+            <div class="marcador col-2" onmouseup="acao3()">
+                <h4>onmouseup</h4>
+            </div>
+            <div class="marcador col-2" onmouseover="acao4()">
+                <h4>onmouseover</h4>
+            </div>
+            <div class="marcador col-2" onmouseout="acao5()">
+                <h4>onmouseout</h4>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

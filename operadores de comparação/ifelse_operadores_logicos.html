@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>If e Else com operadores lógicos</title>
+    <script>
+        /* // && = E
+         if (2 == 2 && 3 >= 1 && 'a' == 'b') {
+             document.write("Verdadeiro");
+         }
+         else {
+             document.write("Falso");
+         }
+         document.write("<br/>");
+         // || = OU
+         if (2 == 2 || 3 >= 1 || 'a' == 'b') {
+             document.write("Verdadeiro");
+         }
+         else {
+             document.write("Falso");
+         }
+         document.write("<br/>");
+         // ! = NÃO
+         if (!(2 == 2)) {
+             document.write("Verdadeiro");
+         }
+         else {
+             document.write("Falso");
+         } */
+        var nome = prompt("Digite o nome do aluno");
+        var nota1 = prompt("Digite a nota 1");
+        var nota2 = prompt("Digite a nota 2");
+        var nota3 = prompt("Digite a nota 3");
+        var faltas = prompt("Digite a quantidade de faltas");
+
+        var media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
+
+        if (media >= 70 && faltas <= 50) {
+            document.write("As notas de " + nome + " foram " + nota1 + ", " + nota2 + ", " + nota3 + ", tendo assim a média de " + media +
+                " e sua quantidade de faltas foi de " + faltas + " portanto o aluno está aprovado");
+        }
+        else {
+            document.write("As notas de " + nome + " foram " + nota1 + ", " + nota2 + ", " + nota3 + ", tendo assim a média de " + media +
+                " e sua quantidade de faltas foi de " + faltas + " portanto o aluno está reprovado");
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

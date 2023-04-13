@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>operadores aritmeticos</title>
+    <script>
+        var v1 = prompt("Digite o valor de A: ");
+        var v2 = prompt("Digite o valor de B: ");
+        var opcao = prompt("Digite a opção desejada: \n 1 - ++ \n 2 - -- \n 3 -  a * b \n 4 - a / b \n 5 - a % b \n 6 - todos os calculos");
+        if (opcao == 1) {
+            v1++
+            v2++
+            document.write("O valor de A incrementado é: " + v1 + " e o valor de B incrementado é: " + v2);
+        }
+        else if (opcao == 2) {
+            v1--
+            v2--
+            document.write("O valor de A decrementado é: " + v1 + " e o valor de B decrementado é: " + v2);
+        }
+        else if (opcao == 3) {
+            document.write("O valor da multiplicação de A X B é: " + (v1 * v2));
+        }
+        else if (opcao == 4) {
+            document.write("O valor da divisão de A / B é: " + (parseFloat(v1) / parseFloat(v2)));
+        }
+        else if (opcao == 5) {
+            document.write("O valor do resto da divisão de A por B é: " + (parseFloat(v1) % parseFloat(v2)));
+        }
+        else if (opcao == 6) {
+            ++v1
+            ++v2
+            document.write("O valor de A incrementado é: " + v1 + " e o valor de B incrementado é: " + v2);
+            document.write("<br>");
+            v1--
+            v2--
+            document.write("O valor de A decrementado é: " + v1 + " e o valor de B decrementado é: " + v2);
+            document.write("<br>");
+            document.write("O valor da multiplicação de A X B é: " + (v1 * v2));
+            document.write("<br>");
+            document.write("O valor da divisão de A / B é: " + (parseFloat(v1) / parseFloat(v2)));
+            document.write("<br>");
+            document.write("O valor do resto da divisão de A por B é: " + (parseFloat(v1) % parseFloat(v2)));
+        }
+        else {
+            document.write("Opção inválida");
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

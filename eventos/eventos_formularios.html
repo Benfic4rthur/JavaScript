@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos mouse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+    </style>
+    <script>
+        function eventoDisparado() {
+            console.log('recebeu o foco');
+        }
+        function eventoDisparado2() {
+            console.log('perdeu o foco');
+        }
+        function eventoDisparado3() {
+            console.log('foi alterado');
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Evento onFocus</h1>
+    <input type="text" onfocus="eventoDisparado()"> <!-- evento disparado quando o campo é focado -->
+    <h1>Evento onBlur</h1>
+    <input type="text" onblur="eventoDisparado2()"> <!-- evento disparado quando o campo é desfocado -->
+    <h1>Evento onChange</h1>
+    <select onchange="eventoDisparado3()">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+    </select>
+</body>
+
+</html>

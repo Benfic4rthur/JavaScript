@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Funções</title>
+    <script>
+        //função com parâmetro
+        //a função com parametro é mais utilizada e trabalha com o valor passado no parametro
+        var largura = parseInt(prompt("digite a largura do terreno (em metros)"));
+        var comprimento = parseInt(prompt("digite o comprimento do terreno (em metros)"));
+        function calcularAreaTerreno(largura, comprimento) {
+            var area = largura * comprimento;
+            return area;
+        }
+        var area = calcularAreaTerreno(largura, comprimento);
+        document.write("A área do terreno é: " + area + " m²");
+
+        //função sem parâmetro
+        //a função sem parametro é menos utilizada e trabalha com o valor interno da função caso não seja passado nenhum valor no parametro da função 
+        //se receber mais parametros ela ignora os valores que não foram passados no parametro da função
+        //se receber menos parametros ela ignora os valores que não foram passados no parametro da função e não retorna nenhum valor
+        function calcularAreaTerreno2() {
+            var largura = parseInt(prompt("digite a largura do terreno (em metros)"));
+            var comprimento = parseInt(prompt("digite o comprimento do terreno (em metros)"));
+            var area = largura * comprimento;
+            return area;
+        }
+        var area2 = calcularAreaTerreno2();
+        document.write("A área do terreno é: " + area2 + " m²");
+    </script>
+</head>
+
+<body>
+    <br><br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Escopo de variaveis</title>
+    <script>
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            //logica para buscar o artigo pelo id
+            if (false) {
+                callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas em JS')
+            }
+            else {
+                callbackErro('Erro ao recuperar os dados do artigo')
+            }
+        }
+        var callbackSucesso = function (titulo, descricao) {
+            document.write('<h1>' + titulo + '</h1> <br> <p>' + descricao + '</p>')
+        }
+        var callbackErro = function (erro) {
+            document.write('<h3> Erro: ' + erro + '</h3>')
+        }
+        exibirArtigo(1, callbackSucesso, callbackErro)
+    </script>
+</head>
+
+<body>
+    <br><br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

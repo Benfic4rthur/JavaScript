@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM - SELECIONANDO ELEMENTOS</title>
+    <script>
+        function alterarEstilo(corDeFundo) {
+            document.getElementById("div_altera").style.backgroundColor = corDeFundo;
+        }
+    </script>
+</head>
+
+<body>
+    <div style="width: 500px; height: 350px; border: 1px solid black;">
+        <h1 style="margin-left: 100px;">manipulando estilos</h1>
+        <input type="button" value="vermelho" onclick="alterarEstilo('red')">
+        <input type="button" value="verde" onclick="alterarEstilo('green')">
+        <input type="button" value="azul" onclick="alterarEstilo('blue')">
+        <input type="button" value="amarelo" onclick="alterarEstilo('yellow')">
+        <input type="button" value="preto" onclick="alterarEstilo('black')">
+        <input type="button" value="branco" onclick="alterarEstilo('white')">
+        <input type="button" value="rosa" onclick="alterarEstilo('pink')">
+        <input type="button" value="laranja" onclick="alterarEstilo('orange')">
+        <input type="button" value="roxo" onclick="alterarEstilo('purple')">
+        <div id="div_altera" style="width:100%; height: 200px; margin-top:50px; border: 1px solid black;"></div>
+    </div>
+</body>
+
+</html>

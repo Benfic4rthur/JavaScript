@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Escopo de variaveis</title>
+    <script>
+        var nome = prompt("Digite seu nome: ");
+        //função anonima serve para não precisar criar uma função com nome
+        var exibirSaudacao = function (nome) {
+            document.write("Olá " + nome + ", seja bem vindo");
+        }
+        exibirSaudacao(nome)
+    </script>
+</head>
+
+<body>
+    <br><br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

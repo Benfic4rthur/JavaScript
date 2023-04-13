@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Escopo de variaveis</title>
+    <script>
+        //escopo global
+        var nome = "João";
+        //escopo de função
+        //tem acesso as variaveis globais
+        //as variaveis criadas dentro dao escopo de função não sofrerão hoisting e não poderão ser chamadas antes de serem criadas em escopo global
+        function mostrarNome() {
+            var nome = "Maria";
+            document.write(nome);
+        }
+        //escopo de bloco
+        //tem acesso as variaveis globais
+        //as variaveis criadas dentro do bloco sofrerão hoisting e poderão ser chamadas antes de serem criadas em escopo global
+        if (true) {
+            var nome = "José";
+            document.write(nome);
+        }
+    </script>
+</head>
+
+<body>
+    <br><br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

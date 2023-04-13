@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>datas em javascript</title>
+    <script>
+        var data = new Date();
+        //getDate() retorna o dia do mes
+        var dia = data.getDate();
+        //getDay() retorna o dia da semana
+        var diaSemana = data.getDay();
+        //getMonth() retorna o mes sempre acrescentar +1 para mostrar o mes certo
+        var mes = data.getMonth();
+        //getFullYear() retorna o ano 
+        var ano = data.getFullYear();
+        //getHours() retorna a hora
+        var hora = data.getHours();
+        //getMinutes() retorna os minutos
+        var minuto = data.getMinutes();
+        //getSeconds() retorna os segundos
+        var segundo = data.getSeconds();
+        //getMilliseconds() retorna os milisegundos
+        var milisegundo = data.getMilliseconds();
+        //getTime() retorna o tempo em milisegundos desde 1 de janeiro de 1970
+        var tempo = data.getTime();
+        //getUTCDate() retorna o dia do mes
+        var diaUTC = data.getUTCDate();
+        //getUTCDay() retorna o dia da semana
+        var diaSemanaUTC = data.getUTCDay();
+        //getUTCMonth() retorna o mes sempre acrescentar +1 para mostrar o mes certo
+        var mesUTC = data.getUTCMonth();
+        //getUTCFullYear() retorna o ano
+        var anoUTC = data.getUTCFullYear();
+        //getUTCHours() retorna a hora
+        var horaUTC = data.getUTCHours();
+        //getUTCMinutes() retorna os minutos
+        var minutoUTC = data.getUTCMinutes();
+        //getUTCSeconds() retorna os segundos
+        var segundoUTC = data.getUTCSeconds();
+        //getUTCMilliseconds() retorna os milisegundos
+        var milisegundoUTC = data.getUTCMilliseconds();
+        //getTimezoneOffset() retorna a diferença entre o fuso horário local e o UTC, em minutos
+        var diferencaFusoHorario = data.getTimezoneOffset();
+        //getYear() retorna o ano
+        var ano2 = data.getYear();
+
+
+        document.write("Data atual: " + dia + "/0" + (mes + 1) + "/" + ano + " - " + hora + ":" + minuto + ":" + segundo + "<br>");
+
+    </script>
+</head>
+
+<body>
+    <br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>

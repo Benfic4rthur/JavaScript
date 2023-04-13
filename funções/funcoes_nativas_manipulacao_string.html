@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Escopo de variaveis</title>
+    <script>
+        var nome = 'Arthur Benfica'
+        //propriedade length faz a contagem de caracteres
+        document.write('Arthur Benfica'.length) //retorna 14
+        document.write('<br>')
+        //propriedade charAt retorna o caracter de acordo com a posição
+        document.write(nome.charAt(7)) //retorna B
+        document.write('<br>')
+        //propriedade indexOf retorna a posição do caracter
+        document.write(nome.indexOf('a')) //retorna 10 diferencia maiusculas de minusculas
+        document.write('<br>')
+        //propriedade replace substitui o caracter
+        document.write(nome.replace('Benfica', 'Santos')) //retorna Arthur Santos
+        document.write('<br>')
+        //propriedade toUpperCase retorna o caracter em maiusculo
+        document.write(nome.toUpperCase()) //retorna ARTHUR BENFICA
+        document.write('<br>')
+        //propriedade toLowerCase retorna o caracter em minusculo
+        document.write(nome.toLowerCase()) //retorna arthur benfica
+        document.write('<br>')
+        //propriedade split retorna o caracter em array
+        document.write(nome.split(' ')) //retorna ["Arthur", "Benfica"]
+        document.write('<br>')
+        //propriedade substr retorna o caracter de acordo com a posição e a quantidade de caracteres
+        document.write(nome.substr(0, 6)) //retorna Arthur
+        document.write('<br>')
+        //propriedade trim remove os espaços em branco
+        document.write(nome.trim()) //retorna Arthur Benfica
+
+    </script>
+</head>
+
+<body>
+    <br><br><br>
+    <input type="button" value="atualizar" onclick="window.location.reload()">
+
+</body>
+
+</html>
