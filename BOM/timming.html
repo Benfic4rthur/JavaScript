@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>BOM - TIMMING</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<script>
+    let i = 5
+    /*setTimeout(function(){
+        document.write('Olá Mundo')
+    }, 2000)
+
+        let x = setInterval(function () {
+        document.write(i + '<br>')
+        i--
+        if (i === 0) {
+            window.location.reload(x)
+        }
+    }, 1000)*/
+
+    let x = setInterval(function () {
+        document.write(i + '<br>')
+        i--
+        if (i === 0) {
+            clearInterval(x)
+        }
+    }, 1000)
+
+</script>
+
+<body style="margin-bottom: 200px;padding: 16px; ">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ordenação de arrays alfabeticamente</title>
+</head>
+<body>
+    <div id="frutas">
+        <!-- A lista de frutas será adicionada aqui pela função "formatarFrutas" -->
+    </div>
+    <br>
+    <h3>Ordenar alfabeticamente</h3>
+    <button onclick="ordenar()">Ordenar</button>
+    <button onclick="location.reload()">Original</button>
+    <script>
+        // Define a função que formata o conteúdo da div "frutas"
+        //usa um for para percorrer o array e adiciona cada elemento do array na variável html
+        function formatarFrutas(lista_frutas) {
+            let html = ""
+            for (let i = 0; i < lista_frutas.length; i++) {
+                html += lista_frutas[i] + "<br>"
+            }
+            return html
+        }
+
+        // Cria o array de frutas
+        let lista_frutas = ["Maçã", "Banana", "Laranja", "Uva", "Pêra", "Melancia", "Abacaxi", "Manga", "Caju", "Ameixa", "Acerola"]
+
+        // Formata e adiciona a lista de frutas na div "frutas"
+        let listaFrutasHtml = formatarFrutas(lista_frutas)
+        document.getElementById("frutas").innerHTML = listaFrutasHtml
+
+        // Define a função que ordena as frutas
+        function ordenar() {
+            //o método sort() ordena os elementos de um array em ordem crescente alfabética
+            lista_frutas.sort()
+            listaFrutasHtml = formatarFrutas(lista_frutas)
+            document.getElementById("frutas").innerHTML = listaFrutasHtml
+        }
+    </script>
+</body>
+</html>

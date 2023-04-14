@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inclusão e exclusão em Arrays simples e multidimensionais</title>
+    <script>
+        //cria um novo array
+        let lista_frutas = []
+        lista_frutas[0] = "Maçã"
+        lista_frutas[1] = "Banana"
+        lista_frutas[2] = "Laranja"
+        lista_frutas[3] = "Uva"
+
+        //inclui um novo elemento no final do array
+        lista_frutas.push("Pera")
+
+        //inclui um novo elemento no ínicio do array
+        lista_frutas.unshift("Abacaxi")
+
+        //exclui o último elemento do array
+        lista_frutas.pop()
+
+        //exclui o primeiro elemento do array
+        lista_frutas.shift()
+
+        //inclusão e exclusão em arrays multidimensionais
+        let lista_frutas2 = []
+        lista_frutas2['frutas'] = ["Maçã", "Banana", "Laranja", "Uva"]
+        lista_frutas2['legumes'] = ["Cenoura", "Batata", "Beterraba", "Abobrinha"]
+
+        //inclui um novo elemento no final do array
+        lista_frutas2['frutas'].push("Pera")
+
+        //inclui um novo elemento no ínicio do array
+        lista_frutas2['legumes'].unshift("pepino")
+
+        //exclui o último elemento do array
+        lista_frutas2['legumes'].pop()
+
+        //exclui o primeiro elemento do array  
+        lista_frutas2['frutas'].shift()
+
+        console.log(lista_frutas2)
+    </script>
+</head>
+
+<body>
+    <h1>NÃO, VOCÊ NÃO ESTA LOUCO, PARA ENTENDER ESSA AULA, USE O CONSOLE DO NAVEGADOR E VOCÊ VERÁ A MAGICA DA EXCLUSÃO E
+        INCLUSÃO DE ITENS NOS ARRAYS
+        SIMPLES E MULTIDIMENSIONAIS EM JAVASCRIPT</h1>
+</body>
+
+</html>

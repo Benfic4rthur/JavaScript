@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Foreach</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script>
+        //foreacho com 3 parâmetros
+        let lista_funcionario = ["João", "Maria", "José", "Ana", "Pedro", "Paulo", "Joaquim"]
+        document.write(lista_funcionario[1])
+        lista_funcionario.forEach(function (valor, indice, array) {
+            console.log('indice ' + indice + ' valor ' + valor)
+            if (valor == 'Maria') {
+                array[indice] = 'Mariana'
+            }
+        })
+        document.write("<br>")
+        document.write(lista_funcionario[1])
+        document.write("<br>")
+
+        //foreach com 1 parâmetro
+        let lista_funcionario2 = ["Maria", "José", "Ana", "Pedro", "Paulo", "Joaquim"]
+        lista_funcionario2.forEach(function (valor) {
+            console.log('valor ' + valor)
+        })
+
+        //foreach com função externa em variavel
+        let lista_funcionario3 = ["Joaquim", "Pedro", "Ana", "José", "Paulo", "Maria"]
+        var f = function (valor) {
+            console.log('valor ' + valor)
+        }
+        lista_funcionario3.forEach(f)
+
+        //foreach com função externa mas não em variavel
+        let lista_funcionario4 = ["Maria", "Paulo", "Ana", "José", "Pedro", "Joaquim"]
+        function f2(valor) {
+            console.log('valor ' + valor)
+        }
+        lista_funcionario4.forEach(f2)
+
+    </script>
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

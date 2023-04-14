@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>BOM - SCREEN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<script>
+    let altura = window.screen.availHeight
+    let largura = window.screen.availWidth
+    let altura2 = window.screen.height
+    let largura2 = window.screen.width
+
+    //document.write(`Altura potencial do navegador: ${altura} <br> Largura potencial do navegador: ${largura}`)
+    //document.write(`<br>Altura do navegador: ${altura2} <br> Largura do navegador: ${largura2}`)
+    if (largura < 800) {
+        document.write(`A tela do seu dispositivo é pequena`)
+    } else {
+        document.write(`A tela do seu dispositivo é grande`)
+    }
+</script>
+
+<body style="margin-bottom: 200px;padding: 16px; ">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

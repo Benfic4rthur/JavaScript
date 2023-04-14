@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Funções</title>
+    <script>
+        function soma() {
+            let resultado = 0
+            for (let i in arguments) { //arguments é um objeto semelhante a um array que contém todos os parâmetros passados para a função
+                resultado += arguments[i]
+            }
+            return resultado
+        }
+        console.log(soma(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 78, " esse é o valor dos valores a frente do texto"));
+    </script>
+</head>
+
+<body>
+    <br><br><br>
+    <h1>ESTA TUDO NOS QUADRIS, OPS, NO CONSOLE...NÃO SE APAVORE</h1>
+
+</body>
+
+</html>

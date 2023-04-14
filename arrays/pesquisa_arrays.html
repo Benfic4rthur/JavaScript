@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pesquisas em Arrays</title>
+    <script>
+        //cria um novo array
+        let lista_frutas = []
+        lista_frutas[0] = "Maçã"
+        lista_frutas[1] = "Banana"
+        lista_frutas[2] = "Laranja"
+        lista_frutas[3] = "Uva"
+        lista_frutas[4] = "Pêra"
+        lista_frutas[5] = "Melancia"
+        lista_frutas[6] = "Abacaxi"
+        lista_frutas[7] = "Manga"
+        lista_frutas[8] = "Caju"
+        lista_frutas[9] = "Ameixa"
+
+        //pesquisa um elemento no array
+        //o indexOf retorna a posição do elemento pesquisado
+        //o valor -1 indica que o elemento não foi encontrado
+        //o valor 0 indica que o elemento foi encontrado na primeira posição e assim por diante
+        //a pesquisa é case sensitive
+        function buscar() {
+            let busca = document.getElementById("busca").value
+            let posicao = lista_frutas.indexOf(busca)
+            if (posicao == -1) {
+                posicao_retorno = document.getElementById('retorno').value = ("O elemento não foi encontrado")
+            } else {
+                posicao_retorno = document.getElementById('retorno').value = ("O elemento foi encontrado na posição: " + posicao)
+            }
+            return posicao
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="busca">
+    <button onclick="buscar()">Buscar</button>
+    <input type="text" id="retorno" placeholder="retorno da pesquisa" style="width: 250px;">
+
+</html>
